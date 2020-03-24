@@ -1,0 +1,13 @@
+
+#- name: install docker
+#  hosts: all
+#  become: yes
+#  roles:
+#    - docker
+
+
+- name: install wordpress
+  hosts: all
+  become: yes
+  roles:
+    - wordpress
