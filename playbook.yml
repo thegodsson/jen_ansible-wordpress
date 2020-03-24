@@ -1,13 +1,12 @@
 
-#- name: install docker
-#  hosts: all
-#  become: yes
-#  roles:
-#    - docker
-
+- name: install wordpress
+  hosts: preprod
+  become: yes
+  roles:
+    - wordpress
 
 - name: install wordpress
-  hosts: all
+  hosts: prod
   become: yes
   roles:
     - wordpress
